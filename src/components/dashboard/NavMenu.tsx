@@ -93,7 +93,7 @@ export function NavMenu({ direction = "row" }: NavMenuProps) {
   }
 
   return (
-    <div className="grid gap-6 text-sm">
+    <div className="grid gap-6 lg:text-sm">
       {navigationSections.map((section, index) => (
         <section
           className={index === 0 ? "" : "border-t border-slate-200 pt-3"}
