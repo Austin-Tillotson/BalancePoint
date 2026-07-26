@@ -21,7 +21,7 @@ export function DashboardInfoCard({
 
   return (
     <article
-      className="h-full cursor-pointer transition-transform duration-200 ease-out perspective-[1000px] hover:scale-[1.1] hover:rotate-3"
+      className="h-full cursor-pointer transition-transform duration-200 ease-out perspective-[1000px] hover:scale-[1.05] hover:rotate-1"
       role="button"
       tabIndex={0}
       onClick={() => setIsFlipped((current) => !current)}
