@@ -43,6 +43,7 @@ function AllocationSlice(props: PieSectorShapeProps) {
   return (
     <Sector
       {...props}
+      className="transition-all duration-200 ease-in-out"
       fill={fill}
       innerRadius={props.isActive ? props.innerRadius - 3 : props.innerRadius}
       outerRadius={props.isActive ? props.outerRadius + 3 : props.outerRadius}
