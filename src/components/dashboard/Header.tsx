@@ -4,14 +4,14 @@ import { useState } from "react";
 import Image from "next/image";
 import { NavMenu } from "./NavMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faFileExport, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="rounded-lg border border-slate-200 bg-white p-4 lg:hidden">
-      <div className="grid gap-4 md:grid-cols-[1fr_auto] md:items-center">
+      <div className="grid gap-4 grid-cols-[1fr_auto] items-center">
         <div className="flex items-center gap-3">
           <Image
             src="/balancepoint-mark.svg"
@@ -37,16 +37,20 @@ export function Header() {
             onClick={() => setIsMenuOpen((current) => !current)}
           >
             <FontAwesomeIcon
-              className="text-lg text-slate-600 hover:text-slate-950"
+              className="text-lg text-slate-600 hover:text-violet-700"
               icon={isMenuOpen ? faXmark : faBars}
             />
           </button>
 
           <button
-            className="w-fit rounded-md border border-slate-300 px-3 py-2 text-sm hover:bg-slate-100"
+            className="flex h-9 w-9 items-center justify-center"
             type="button"
+            aria-label="Export report"
           >
-            Export Report
+            <FontAwesomeIcon
+              className="text-lg text-slate-600 hover:text-violet-700"
+              icon={faFileExport}
+            />
           </button>
         </div>
       </div>
