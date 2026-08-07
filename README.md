@@ -1,16 +1,14 @@
 <div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="./public/balancepoint-mark.svg" alt="BalancePoint logo" width="48" height="48" />
-      </td>
-      <td>
-        <span style="color:#6D28D9; font-size:32px; font-weight:700;">
-          BalancePoint
-        </span>
-      </td>
-    </tr>
-  </table>
+  <div>
+    <img src="./public/balancepoint-mark.svg" alt="BalancePoint logo" width="48" height="48" />
+    <h1>
+      <span style="color:#6D28D9;">BalancePoint</span>
+    </h1>
+  </div>
+
+  <p>
+    A professionally designed personal finance dashboard built as a front-end portfolio project.
+  </p>
 </div>
 
 ![BalancePoint dashboard preview](./public/dashboard-preview.png)
@@ -33,53 +31,17 @@ The goal of this project is to demonstrate practical front-end development skill
 
 ## Local Development
 
-Clone the repository:
-
-```bash
-git clone YOUR_REPOSITORY_URL
-```
-
-Move into the project folder:
-
-```bash
-cd financial-app
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
+Project is built off NextJs. Utilize the following command to run the project. 
 
 ```bash
 npm run dev
-```
-
-Open the app in your browser:
-
-```text
-http://localhost:3000
-```
-
-Build the production version:
-
-```bash
-npm run build
-```
-
-Run the production build locally:
-
-```bash
-npm run start
 ```
 
 ## Live Demo
 
 View the deployed site on Vercel:
 
-[BalancePoint on Vercel](https://financial-app-project-bunuvzuwe-austin-tillotsons-projects.vercel.app/)
+[BalancePoint on Vercel](https://balancepoint-aephpvyzz-austin-tillotsons-projects.vercel.app/)
 
 ## Tools And Frameworks
 
