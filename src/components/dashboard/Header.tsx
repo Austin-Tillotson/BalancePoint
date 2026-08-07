@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { NavMenu } from "./NavMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faFileExport, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,17 +38,6 @@ export function Header() {
             <FontAwesomeIcon
               className="text-lg text-slate-600 hover:text-violet-700"
               icon={isMenuOpen ? faXmark : faBars}
-            />
-          </button>
-
-          <button
-            className="flex h-9 w-9 items-center justify-center"
-            type="button"
-            aria-label="Export report"
-          >
-            <FontAwesomeIcon
-              className="text-lg text-slate-600 hover:text-violet-700"
-              icon={faFileExport}
             />
           </button>
         </div>

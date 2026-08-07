@@ -1,5 +1,7 @@
 import { transactions } from "@/data/dashboard";
 import { Card } from "@/components/ui/Card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileExport } from "@fortawesome/free-solid-svg-icons";
 
 const statusStyles = {
   Completed: "text-green-600",
@@ -11,7 +13,22 @@ export function TransactionsTable() {
   return (
     <Card className="overflow-x-auto">
       <section>
-        <h2 className="dashboard-card-header">Recent Transactions</h2>
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="dashboard-card-header">
+            Recent Transactions
+          </h2>
+
+          <button
+            className="flex h-9 w-9 items-center justify-center"
+            type="button"
+            aria-label="Export transactions"
+          >
+            <FontAwesomeIcon
+              className="text-lg text-slate-600 hover:text-violet-700"
+              icon={faFileExport}
+            />
+          </button>
+        </div>
 
         <table className="dashboard-table">
           <colgroup>

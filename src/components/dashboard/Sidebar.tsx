@@ -23,13 +23,6 @@ export function Sidebar() {
         <nav className="mt-8" aria-label="Dashboard navigation">
           <NavMenu direction="column" />
         </nav>
-
-        <button
-          className="mt-auto w-fit rounded-md border border-slate-300 px-3 py-2 text-sm hover:bg-slate-100"
-          type="button"
-        >
-          Export Report
-        </button>
       </div>
     </aside>
   );
